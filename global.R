@@ -6,7 +6,7 @@ library(shinydashboard);
 library(tsda);
 library(tsdo);
 library(tsui);
-library(rdjhPkg)
+library(rdjhpkg)
 
 # 设置引入页-----
 source('00_data.R',encoding = 'utf-8');

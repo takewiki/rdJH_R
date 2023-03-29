@@ -48,7 +48,7 @@ shinyServer(function(input, output, session) {
                         file_name = var_file_export_baseInfo()
                         
                         # 更新数据
-                        rdjhPkg::pyrdjhmain(file_name, token)
+                        rdjhpkg::pyrdjhmain(file_name, token)
                         
                         # 消息框提示
                         tsui::pop_notice('更新已成功')
