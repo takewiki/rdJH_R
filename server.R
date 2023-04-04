@@ -53,6 +53,9 @@ shinyServer(function(input, output, session) {
                         # 消息框提示
                         tsui::pop_notice('更新已成功')
                         
+                        # 查询更新结果
+                        dataisdo1 = rdjhpkg::pyrdjhres(token)
+                        
                         # 下载数据
                         tsui::run_download_xlsx(id = 'dl_export_baseInfo',data =dataisdo1 ,filename = '结果对比.xlsx')
                       })
